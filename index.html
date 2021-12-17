@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>TODO APP</title>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-image-container">
+        <img src="./images/bg-desktop-light.jpg" alt="background image" />
+      </div>
+      <div class="card">
+        <div class="title-card">
+          <h1>TODO</h1>
+          <div class="theme-container">
+            <img
+              src="./images/icon-moon.svg"
+              alt="change to dark"
+              id="toDark"
+            />
+            <img
+              src="./images/icon-sun.svg"
+              alt="change to light"
+              id="toLight"
+            />
+          </div>
+        </div>
+        <div class="new-task-container shadow">
+          <div class="btn-add-task">
+            <img src="./images/icon-check.svg" alt="add task" />
+          </div>
+          <input type="text" id="addTask" placeholder="Create a new todo..." />
+        </div>
+        <div class="tasks-container shadow">
+          <div class="no-tasks">There are no tasks</div>
+          <div class="tasks">
+            
+          </div>
+          <div class="card-footer">
+            <div><p>5 tasks left</p></div>
+            <div class="filter-tasks">
+              <p class="filter-active">All</p>
+              <p>Active</p>
+              <p>Completed</p>
+            </div>
+            <div class="clear-completed"><p>Clear Completed</p></div>
+          </div>
+          </div>
+        </div>
+        <div class="information"><p>Drag and drop to reorder list</p></div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./theme.js"></script>
+    <script src="./dragAndDrop.js"></script>
+  </body>
+</html>

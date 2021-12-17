@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <title>TODO APP</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="background-image-container">
-        <img src="./images/bg-desktop-light.jpg" alt="background image" />
+        <img src="./images/desktop/bg-light.jpg" alt="background image" />
       </div>
       <div class="card">
         <div class="title-card">
@@ -40,7 +41,7 @@
             
           </div>
           <div class="card-footer">
-            <div><p>5 tasks left</p></div>
+            <div><p id="tasksLeft">5 tasks left</p></div>
             <div class="filter-tasks">
               <p class="filter-active">All</p>
               <p>Active</p>
@@ -56,5 +57,6 @@
     <script src="./main.js"></script>
     <script src="./theme.js"></script>
     <script src="./dragAndDrop.js"></script>
+    <script src="./resizeControls.js"></script>
   </body>
 </html>

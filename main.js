@@ -4,11 +4,13 @@ const $addTask = document.querySelector('.btn-add-task')
 const $inputTask = document.querySelector('#addTask')
 const $tasks = document.querySelector('.tasks')
 const $clearFinishedTasks = document.querySelector('.clear-completed')
+const $leftTasksText = document.querySelector('#tasksLeft')
 
 let tasks = []
 
-
-
+const showLeftTasks = () => {
+    $leftTasksText.innerHTML = `${tasks.filter(task => task.finished === false).length} tasks left`
+}
 
 $filters.forEach($filter => {
     $filter.addEventListener('click', (e) => {
@@ -91,6 +93,7 @@ const showTasks = (tasksToShow) => {
         $tasks.appendChild($createTask(task))
     })
     addEvents()
+    showLeftTasks()
 }
 
 const $createTask = ({task, finished}) => {

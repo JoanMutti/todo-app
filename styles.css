@@ -39,13 +39,15 @@ body {
 }
 
 .background-image-container img {
+  height: 250px;
   width: 100%;
 }
 
 .card {
   color: var(--color2);
   margin-top: 60px;
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
 }
 
 .title-card {
@@ -93,7 +95,7 @@ h1 {
 .new-task-container input {
   border: none;
   background-color: var(--color3);
-  width: 95%;
+  width: 80%;
   margin-left: 15px;
   font-size: 18px;
   color: var(--color2);
@@ -234,4 +236,22 @@ input:focus-visible {
 
 .clear-completed:hover{
   color: var(--color6);
+}
+
+@media screen and (max-width: 480px) {
+  
+  .card p{
+    font-size: 15px;
+  }
+
+  .filter-tasks{
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color3);
+    height: 50px;
+    box-shadow: 2px 2px 20px rgba(39, 39, 39, 0.25);
+    border-radius: 5px;
+  }
 }
